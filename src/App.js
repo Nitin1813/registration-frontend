@@ -38,7 +38,7 @@ function App() {
       };
 
       try {
-        const res = await fetch('/api/fetch-data', {
+        const res = await fetch('https://registration-backend-two.vercel.app/api/fetch-data', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
