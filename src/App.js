@@ -38,7 +38,7 @@ function App() {
       };
 
       try {
-        const res = await fetch('https://dbocwwb.delhi.gov.in/AadharAPI/api/GetJSONInfo/', {
+        const res = await fetch('https://registration-backend-opal.vercel.app/api/fetch-data', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
